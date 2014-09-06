@@ -17,8 +17,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    // Insert code here...
+    // Insert code here..
     
+    NSString *myName = @"Sergio";
+    NSString *introduction, *japaneseIntroduction;
+    
+    introduction = [NSString stringWithFormat:@"My Name is %@", myName];
+    japaneseIntroduction = [myName stringByAppendingString:@" to moushimasu"];
+                            
+    NSLog(introduction);
+    NSLog(japaneseIntroduction);
+                        
     
     return YES;
 }
