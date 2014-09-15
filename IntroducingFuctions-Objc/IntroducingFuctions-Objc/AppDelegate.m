@@ -19,13 +19,13 @@ NSString *printIntroductions(NSString *);
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    NSlog(printIntroductions(<#NSString *name#>));
+    NSLog[printIntroductions(name)];
     
     return YES;
 }
 
-// Define new functions here...
-NSString *printIntroductions(NSString *name){
+    // Define new functions here...
+    NSString *printIntroductions(NSString *name){
     
     //Declare and set a variable called myName to your name
     NSString *myName = @"Sergio";
