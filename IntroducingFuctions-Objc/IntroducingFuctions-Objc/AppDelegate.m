@@ -2,11 +2,13 @@
 //  AppDelegate.m
 //  IntroducingFuctions-Objc
 //
-//  Created by Joshua Howland on 8/14/14.
+//  Created by Sergio Perez on 9/14/14.
 //  Copyright (c) 2014 DevMountain. All rights reserved.
 //
 
 #import "AppDelegate.h"
+
+NSString *printIntroductions(NSString *);
 
 @interface AppDelegate ()
 
@@ -17,7 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    // Insert code here..
+    NSlog(printIntroductions(<#NSString *name#>));
+    
+    return YES;
+}
+
+// Define new functions here...
+NSString *printIntroductions(NSString *name){
     
     //Declare and set a variable called myName to your name
     NSString *myName = @"Sergio";
@@ -34,18 +42,7 @@
     NSLog(@"%@",introduction);
     NSLog(@"%@",japaneseIntroduction);
     
-    return YES;
+    return name;
 }
-
-// Define new functions here...
-
-//+(instancetype)stringWithFormat:(NSString *);
-//-(NSString *)stringByAppendingString:(NSString *);
-
-
-    //NSLog(introduction){
-    
-//}
-
 
 @end
